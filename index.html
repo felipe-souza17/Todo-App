@@ -25,12 +25,18 @@
         <div class="submit-image">
             <img class="camera-icon" src="img/camera.png" alt="Camera Image">
         </div>
+        <div class="welcome">
+            <p>Hello!</p>
+        </div>
         <form action="pages/todo.html" autocomplete="off">
-            <input class="input-username" type="text" id="username" placeholder="Username">
-            <input class="submit-username" onclick="saveUserData()" type="submit" value="GET STARTED">
+            <input required class="input-form" type="text" id="username" placeholder="Username" maxlength="30">
+            <p class="error-input" id="error-username"></p>
+            <input required class="input-form" type="password" id="password" placeholder="Password" maxlength="30">
+            <p class="error-input" id="error-password"></p>
+            <input disabled class="submit-form" id="submit-form" type="submit" value="GET STARTED">
         </form>
     </main>
     
 </body>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </html>

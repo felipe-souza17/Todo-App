@@ -4,6 +4,7 @@
     --gray: #738188;
     --dark-blue: #242E4C;
     --very-dark-blue: #152F46;
+    --green-checked: #5FA319;
 }
 * {
     margin: 0;
@@ -21,19 +22,24 @@
 }
 .submit-image {
     margin: 50px auto;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #EBF0F5;
-    border-radius: 50px;
+    border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 }
 .camera-icon {
     position: relative;
     width: 25%;
-    top: 80px;
-    left: 70px;
+    top: 120px;
+    left: 100px;
     object-fit: cover;
+}
+/* Welcome */
+.welcome {
+    margin: 0 auto;
+    font-size: 25px;
 }
 /* Form */
 form {
@@ -41,17 +47,18 @@ form {
     flex-direction: column;
     margin: 60px auto;
 }
-.input-username {
+.input-form {
+    margin: 10px 0;
     padding: 15px 45px 15px 15px;
     font-size: 18px;
     border: 1px solid var(--light-gray);
     color: gray;
     border-radius: 5px;
 }
-.input-username:focus {
+.input-form:focus {
     outline: 1px solid var(--dark-blue);
 }
-.submit-username {
+.submit-form {
     margin: 15px auto;  
     padding: 15px 20px;
     font-size: 18px;
@@ -60,4 +67,8 @@ form {
     background-color: var(--very-dark-blue);
     border-radius: 5px;
     border: none;
+}
+.error-input {
+    font-size: 15px;
+    color: #EA4141;
 }
