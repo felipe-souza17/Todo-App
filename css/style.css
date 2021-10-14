@@ -1,0 +1,63 @@
+:root {
+    --white: #FFFFFF;
+    --light-gray: #BECCD4;
+    --gray: #738188;
+    --dark-blue: #242E4C;
+    --very-dark-blue: #152F46;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sign Up*/
+
+/* Submit Image */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.submit-image {
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    background-color: #EBF0F5;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+.camera-icon {
+    position: relative;
+    width: 25%;
+    top: 80px;
+    left: 70px;
+    object-fit: cover;
+}
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+}
+.input-username {
+    padding: 15px 45px 15px 15px;
+    font-size: 18px;
+    border: 1px solid var(--light-gray);
+    color: gray;
+    border-radius: 5px;
+}
+.input-username:focus {
+    outline: 1px solid var(--dark-blue);
+}
+.submit-username {
+    margin: 15px auto;  
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--very-dark-blue);
+    border-radius: 5px;
+    border: none;
+}
