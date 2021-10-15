@@ -1,0 +1,90 @@
+:root {
+    --white: #FFFFFF;
+    --very-light-gray: #F2F5F7;
+    --light-gray: #BECCD4;
+    --gray: #738188;
+    --dark-blue: #242E4C;
+    --very-dark-blue: #152F46;
+    --green-checked: #5FA319;
+}
+* {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 15px 10px;
+    background-color: var(--very-light-gray);
+}
+a {
+    text-decoration: none;
+    color: var(--very-dark-blue);;
+}
+/* Header/Back-login */
+header {
+    display: flex;
+    align-items: center;
+    color: var(--very-dark-blue);
+}
+.go-to-login {
+    font-size: 50px;
+    margin-right: 15px;
+    
+}
+
+/* Container/TodoList */
+.todo-form {
+    display: flex;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.todo-input {
+    margin: 10px 0;
+    padding: 10px 35px 10px 10px;
+    font-size: 18px;
+    border: 1px solid var(--light-gray);
+    color: gray;
+    border-radius: 5px;
+}
+.todo-input:focus {
+    outline: 0px solid var(--dark-blue);
+}
+.todo-button {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--very-dark-blue);
+    border-radius: 5px;
+    border: none;
+}
+
+/* Container/TodoElements */
+.todo-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+}
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px var(--very-dark-blue);
+}
+.todo-content {
+    font-weight: 500;
+    color: var(--dark-blue);
+    width: 70%;
+}
+.todo-options {
+    font-size: 25px;
+}
+.fa-times {
+    color: #EA4141;
+}

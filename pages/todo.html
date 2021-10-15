@@ -19,8 +19,34 @@
     <script src="https://kit.fontawesome.com/bfb7599492.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    My form name is <div id="nameHere"></div>
-    <button onclick="show()">teste</button>
+    <header>
+        <div class="go-to-login">
+            <i id="to-login" class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <h1>My Todo List</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="todo-form">
+                <div class="form">
+                    <input class="todo-input" id="new-todo" type="text" id="" placeholder="Your Todo">
+                    <input class="todo-button" id="btn-todo" type="submit" value="+ ADD NEW">
+                </div>
+            </div>
+            <div class="todo-elements">
+                <ul id="todo-list" class="todo-list">
+                    <!-- <li>
+                        <div class="todo-content">
+                            <p></p>
+                        </div>
+                        <div class="todo-options">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 <script src="../js/app.js"></script>
 </html>

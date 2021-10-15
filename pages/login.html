@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/login.css">
@@ -19,6 +19,19 @@
     <script src="https://kit.fontawesome.com/bfb7599492.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <main class="container">
+        <div class="submit-image">
+            <img class="camera-icon" src="img/camera.png" alt="Camera Image">
+        </div>
+        <div class="welcome">
+            <p id="user-welcome">Hello!</p>
+        </div>
+        <form action="pages/todo.html" autocomplete="off">
+            <input required class="input-form" type="password" id="password" placeholder="Password" maxlength="30">
+            <p class="error-input" id="error-password"></p>
+            <input disabled class="submit-form" id="submit-form" type="submit" value="LOGIN">
+        </form>
+    </main>
 </body>
+<script src="../js/login.js"></script>
 </html>
