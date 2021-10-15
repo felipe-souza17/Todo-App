@@ -24,22 +24,24 @@
     margin: 50px auto;
     width: 150px;
     height: 150px;
-    background-color: #EBF0F5;
     border-radius: 50%;
-    object-fit: cover;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 }
-.camera-icon {
-    position: relative;
-    width: 25%;
-    top: 120px;
-    left: 100px;
+.user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
 }
 /* Welcome */
 .welcome {
+    width: auto;
     margin: 0 auto;
     font-size: 25px;
+}
+#user-welcome {
+    font-weight: 700;
+    color: var(--very-dark-blue);
 }
 /* Form */
 form {
